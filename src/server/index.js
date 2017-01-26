@@ -3,7 +3,6 @@ import httpServer from './config/http-server';
 import socket from './config/socket';
 import config from './config';
 import reducers from '../shared/app/reducers';
-//import routes from '../shared/route/Routes';
 import createStore from '../shared/app/store';
 import routes from '../shared/route/Routes';
 import NotFoundPage from '../shared/404/NotFoundPage'
