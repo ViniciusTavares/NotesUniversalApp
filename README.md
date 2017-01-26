@@ -1,3 +1,7 @@
+#Notes - Simple notations updated on real time!
+
+<img src="/src/client/static/img/header.png" alt="Cover image" />
+
 ###App description:
 Notes is a demo of how to use React, Redux, REST Services, Sockeio.io, Webpack and Universal Javascript together. Its interface is simple and objective, in this moment there're only 2 pages, however the most important part of this project is its background development.  
 
