@@ -1,6 +1,6 @@
 /** @module notes/actions */
 
-import notesApi from './api';
+import notesApi from './Api';
 import Notifications from 'react-notification-system-redux';
 
 /** ACTIONS  TYPES  */

@@ -1,7 +1,7 @@
 /** @module notes/containers/NoteContainer */
 
 import { connect } from 'react-redux'
-import * as noteActions from '../actions'
+import * as noteActions from '../Actions'
 import React, { Component } from 'react'
 import Notifications from 'react-notification-system-redux';
 import Create from '../Create'

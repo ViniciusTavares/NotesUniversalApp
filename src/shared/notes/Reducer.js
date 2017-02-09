@@ -1,6 +1,6 @@
 /** @module notes/reducer */
 
-import {REQUEST_NOTES, RECEIVE_NOTES ,NOTE_GOT_SELECTED, NOTE_SAVED } from './actions'
+import {REQUEST_NOTES, RECEIVE_NOTES ,NOTE_GOT_SELECTED, NOTE_SAVED } from './Actions'
 
 const noteReducer =  (state = {data: [], loading: false, count: 0, firstLoad: true }, action)  => {
   switch(action.type){

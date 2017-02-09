@@ -2,7 +2,7 @@ import React from 'react';
 import {render} from 'react-dom';
 import AppRoutes from '../route/AppRoutes';
 import io from 'socket.io-client';
-import createStore from './store';
+import createStore from './Store';
 import {Provider} from 'react-redux';
 import { Router, Route, browserHistory } from 'react-router';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux'

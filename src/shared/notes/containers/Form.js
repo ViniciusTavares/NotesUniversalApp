@@ -3,8 +3,8 @@
 import React, { Component } from 'react'
 import { reduxForm, Field } from 'redux-form';
 import { connect } from 'react-redux'
-import * as categoryActions from '../../categories/actions'
-import * as noteActions from '../actions'
+import * as categoryActions from '../../categories/Actions'
+import * as noteActions from '../Actions'
 import Notifications from 'react-notification-system-redux';
 import { fieldsValidator, renderFields } from '../../common'
 
@@ -67,7 +67,7 @@ class Form extends Component{
 }
 
 Form = reduxForm({
-  form: 'noteForm', 
+  form: 'noteForm',
 })(Form);
 
 Form = connect(

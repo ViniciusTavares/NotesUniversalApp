@@ -2,7 +2,7 @@
 
 import React, {  Component } from 'react';
 import NotePreview from './NotePreview';
-import actions from './actions'
+import actions from './Actions'
 
 export default class NoteList extends Component {
   constructor() {

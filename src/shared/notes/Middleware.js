@@ -1,7 +1,7 @@
 /** @module notes/middleware */
 
 import io from 'socket.io-client'
-import { updateNotesArray } from './actions'
+import { updateNotesArray } from './Actions'
 import { isServerRendering, getBaseUrl } from '../common'
 
 let eventsInitialized = false

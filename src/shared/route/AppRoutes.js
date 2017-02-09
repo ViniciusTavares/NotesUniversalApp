@@ -1,8 +1,8 @@
 /** @module route/AppRoutes */
 
-import React, { Component }  from 'react';
-import { Router, Route, browserHistory } from 'react-router';
-import routes from './routes'
+import React, { Component }  from 'react'
+import { Router, Route, browserHistory } from 'react-router'
+import routes from './Routes'
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 
 const AppRoutes = (history) => {

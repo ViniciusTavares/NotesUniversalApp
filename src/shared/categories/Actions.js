@@ -1,6 +1,6 @@
 /** @module categories/actions */
 
-import categoriesApi from './api'
+import categoriesApi from './Api'
 
 export const RECEIVE_CATEGORIES = 'RECEIVE_CATEGORIES'
 

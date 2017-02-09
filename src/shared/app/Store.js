@@ -3,8 +3,8 @@
 import { applyMiddleware, createStore } from 'redux'
 
 import thunk from 'redux-thunk'
-import notesMiddleware from '../notes/middleware'
-import reducers from './reducers'
+import notesMiddleware from '../notes/Middleware'
+import reducers from './Reducers'
 
 const middleware = [thunk, notesMiddleware];
 
