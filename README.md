@@ -1,4 +1,4 @@
-<h1>Notes - Simple notations updated on real time! </h1>
+<h1>Notes - Simple notations updated on real time!</h1>
 
 <img src="/src/client/static/img/header.png" alt="Cover image" />
 
@@ -11,7 +11,7 @@ The whole project has been coded in ES6 ( ES-2015 ), so is necessary to transpil
 
 Gulp has an import participation, once its is responsible for preparing and executing tasks so, there are tasks for bundling (through webpack module), cleaning the build directory, copying static files and watching changes in javascripts files.  
 
-<h3>Notes's patterns and principles: </h3>
+<h3>Notes's patterns and principles:</h3>
 
 * Single page application
 * Domain based
@@ -22,7 +22,7 @@ Gulp has an import participation, once its is responsible for preparing and exec
 * Universal javascript
 * Generic repository
 
-<h3>Tools: </h3>
+<h3>Tools:</h3>
 
 * ExpressJS 4.X
 * React
@@ -51,19 +51,21 @@ Or
 gulp
 ```
 
-<h3>Setting up the enviroment </h3>
+<h3>Setting up the enviroment</h3>
 By default config variables were set up in webpack's configs. Take a look at plugins section on webpack.#.config.js files, there will be some code like this:
+
 ```
 new webpack.DefinePlugin({
   'process.env': {
         'NODE_ENV':  JSON.stringify('production'),
         'PORT': JSON.stringify("3000"),
         'API_URL': JSON.stringify("http://localhost:3000"),
-        'MONGO' : { URI:  JSON.stringify('mongodb://notesapp:notes123@ds147799.mlab.com:47799/heroku_lwvj2lv2') }
+        'MONGO' : { URI:  JSON.stringify("mongodb://notesapp:notes123@ds147799.mlab.com:47799/heroku_lwvj2lv2") }
       }
 })
 ```
-Notice that I've already set up a mongoDB connection in Heroku's cloud. Besides that, there's a config classe located in ```src/server/config/config.js```. It accesses env's variables based on those process.env values.
+
+Notice that I've already set up a mongoDB connection in Heroku's cloud. Besides that, there's a config classe located in `src/server/config/config.js`. It accesses env's variables based on those process.env values.
 
 <h3>Routes Draft:</h3>
 
