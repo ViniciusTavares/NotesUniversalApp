@@ -45,7 +45,7 @@ module.exports = {
         'NODE_ENV':  JSON.stringify('production'),
         'PORT': JSON.stringify("3000"),
         'API_URL': JSON.stringify("http://localhost:3000"),
-        'MONGO' : { address:  JSON.stringify('localhost'), port:  JSON.stringify('27017'), database:  JSON.stringify('LiveFeed') }
+        'MONGO' : { URI:  JSON.stringify('mongodb://notesapp:notes123@ds147799.mlab.com:47799/heroku_lwvj2lv2') }
       }
     }),
     new webpack.optimize.DedupePlugin(),

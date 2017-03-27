@@ -14,9 +14,7 @@ class config {
 
   static get database() {
     return {
-      address: process.env.MONGO.address || 'localhost',
-      port: process.env.MONGO.port || '27017',
-      database: process.env.MONGO.database || 'LiveFeed'
+      URI:  process.env.MONGO.URI || 'mongodb://localhost:27017/NotesLiveApp'
     }
   }
 }

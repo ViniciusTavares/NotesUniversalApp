@@ -1,8 +1,8 @@
-#Notes - Simple notations updated on real time!
+<h1>Notes - Simple notations updated on real time! </h1>
 
 <img src="/src/client/static/img/header.png" alt="Cover image" />
 
-###App description:
+<h3>Description:</h3>
 Notes is a demo of how to use React, Redux, REST Services, Sockeio.io, Webpack and Universal Javascript together. Its interface is simple and objective, in this moment there're only 2 pages, however the most important part of this project is its background development.  
 
 It contains some modern principles and structures, for instance: Single Page Application, State container and Universal Javascript through server rendering and processing the initial application state. Below there is a list with not only the principles, but also the frameworks that have been used here.  
@@ -11,7 +11,7 @@ The whole project has been coded in ES6 ( ES-2015 ), so is necessary to transpil
 
 Gulp has an import participation, once its is responsible for preparing and executing tasks so, there are tasks for bundling (through webpack module), cleaning the build directory, copying static files and watching changes in javascripts files.  
 
-###Notes's patterns and principles:
+<h3>Notes's patterns and principles: </h3>
 
 * Single page application
 * Domain based
@@ -22,7 +22,7 @@ Gulp has an import participation, once its is responsible for preparing and exec
 * Universal javascript
 * Generic repository
 
-###Tools:
+<h3>Tools: </h3>
 
 * ExpressJS 4.X
 * React
@@ -36,13 +36,7 @@ Gulp has an import participation, once its is responsible for preparing and exec
 * Foundation
 * Webpack
 
-### Roadmap for February 2017
-
-* Add unit tests
-* Create tasks for development and production enviroments
-* Add devtools in store
-
-###Budling and running the server
+<h3>Budling and running the server</h3>
 Install all packages
 ```
 npm install
@@ -57,24 +51,23 @@ Or
 gulp
 ```
 
-###Setting up the enviroment
-By default config variables were set up in webpack's configs. Take a look at plugins section at webpack.#.config.js files, there will be some code like this:
+<h3>Setting up the enviroment </h3>
+By default config variables were set up in webpack's configs. Take a look at plugins section on webpack.#.config.js files, there will be some code like this:
 ```
 new webpack.DefinePlugin({
   'process.env': {
-    'NODE_ENV':  JSON.stringify('production'),
-    'PORT': JSON.stringify("3000"),
-    'API_URL': JSON.stringify("http://localhost:3000"),
-    'MONGO' : { address:  JSON.stringify('localhost'), port:  JSON.stringify('27017'), database:  JSON.stringify('LiveFeed') }
-  }
-}),
+        'NODE_ENV':  JSON.stringify('production'),
+        'PORT': JSON.stringify("3000"),
+        'API_URL': JSON.stringify("http://localhost:3000"),
+        'MONGO' : { URI:  JSON.stringify('mongodb://notesapp:notes123@ds147799.mlab.com:47799/heroku_lwvj2lv2') }
+      }
+})
 ```
-Changing them you'll be able to set your own personal port, address, etc.
-Besides that, there's a config classe located at ```src/server/config/config.js```. It access env's variables, so what you do at webpack's configs will reflect on it.
+Notice that I've already set up a mongoDB connection in Heroku's cloud. Besides that, there's a config classe located in ```src/server/config/config.js```. It accesses env's variables based on those process.env values.
 
-### Routes Draft::
+<h3>Routes Draft:</h3>
 
-####Notes
+<h4>Notes </h4>
 
  > REASON	Create a note  
  > METHOD	POST  
@@ -93,7 +86,7 @@ Besides that, there's a config classe located at ```src/server/config/config.js`
  > URL	{base}/api/notes?page={page}&limit={limit}  
  > RESPONSE	Success: 200 with data or 404. Error: 500  
 
-####Categories
+<h4>Categories</h4>
 
  > REASON	Create a category  
  > METHOD	POST  
@@ -112,11 +105,11 @@ Besides that, there's a config classe located at ```src/server/config/config.js`
  > URL	{base}/api/categories  
  > RESPONSE	Success: 200 with data or 404. Error: 500  
 
-###References:
+<h3>References:</h3>
 [React Redux Files Structure Reference](http://marmelab.com/blog/2015/12/17/react-directory-structure.html)  
 [Express Code Structure](https://github.com/ViniciusTavares/express_code_structure)  
-[Server Side Rendering with Redux and React Router](https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app)  
+[Server Side Rendering with Redux and React Router](https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app)
 
-###Issues and questions
-Have you have any questions? Found any issue? So, it'll be a pleasure to help you.    
-I'll be checking the issues topis whenever possible :)
+<h3>Issues and questions</h3>
+Have you have any questions? Found any issue? It'll be a pleasure to help you.    
+I'll be checking issues topics whenever possible :)

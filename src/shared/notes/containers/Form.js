@@ -53,9 +53,9 @@ class Form extends Component{
         <Field name="category" label="Category"
           component={renderFields.renderSelect} validate={fieldsValidator.required } >
           <option disabled>Pick a category</option>
-          {categoriesOptions}
+          {categoriesOptions}
         </Field>
-        <div className="inner-center">
+        <div className="inner-center padding-top-10">
           <button type="button" className="button secondary float-right" onClick={closeForm}>Cancel</button>
           <button type="submit" disabled={submitting} className="button dark float-right">
             Save

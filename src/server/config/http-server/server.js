@@ -63,19 +63,18 @@ const create = (databaseConfig, client) => {
   const startMongoose = config => {
     // changing deprecated mongoose's promise (mpromise) to ES6's promises.
     mongoose.Promise = global.Promise
-    let retryTiming = 10000
 
-    let connectWithRetry = () => {
-      mongoose.connect(`mongodb://${config.address}:${config.port}/${config.database}`, {server:{auto_reconnect:true, reconnectTries: Number.MAX_VALUE }}, (err) => {
-        if(err) {
-          console.log(`Failed to connect to mongo on startup - retrying in ${retryTiming / 1000} sec`)
-          console.error(err.message)
-          setTimeout(connectWithRetry, retryTiming);
-        }
-      })
-    }
+    let  options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
+    replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } };
 
-    connectWithRetry();
+console.log(config.URI)
+    mongoose.connect(config.URI, options);
+    let conn = mongoose.connection
+
+    conn.on('error', () => {
+      console.error.bind(console, 'connection error:')
+      console.log(`Connection string: ${config.URI}`)
+    })
   }
 
   export default { create }
