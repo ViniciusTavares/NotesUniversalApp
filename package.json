@@ -1,7 +1,7 @@
 {
   "name": "notesuniversalapp",
   "version": "1.0.0",
-  "description": "[Node Style Guide](https://github.com/RisingStack/node-style-guide)",
+  "description": "Notes Universal App [https://github.com/ViniciusTavares/NotesUniversalApp]",
   "main": "index.js",
   "dependencies": {
     "axios": "~0.15.3",
@@ -67,7 +67,7 @@
     "react-transform"
   ],
   "bugs": {
-    "url": "https://github.com/owner/project/issues",
+    "url": "https://github.com/ViniciusTavares/NotesUniversalApp/issues",
     "email": "vinicius.rafael19@hotmail.com"
   },
   "author": "Vinicius Tavares <vinicius.rafael19@hotmail.com> (https://github.com/ViniciusTavares)",
